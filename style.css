@@ -565,125 +565,101 @@ body{
     margin-bottom: 20px;
 }
 ./* ================= APPOINTMENT ================= */
+/* Appointment Section */
 
-.appointment{
+.appointment {
     padding: 100px 10%;
-
     background-color: #f5fbff;
 
-    display: flex;
-
+    display: grid;
+    grid-template-columns: 45% 50%;
     justify-content: space-between;
-
     align-items: center;
-
-    gap: 70px;
+    gap: 5%;
 }
-
 
 /* Left Content */
 
-.appointment-content{
-    width: 45%;
+.appointment-content {
+    width: 100%;
 }
 
-
-.appointment-content h2{
+.appointment-content h2 {
     font-size: 40px;
-
     color: #023e8a;
-
     margin: 15px 0;
 }
 
-
-.appointment-content > p:last-child{
+.appointment-content > p:last-child {
     color: #666;
-
     font-size: 17px;
-
     line-height: 1.8;
 }
 
+/* Appointment Form */
 
-/* Form */
-
-.appointment-form{
-    width: 50%;
+.appointment-form {
+    width: 100%;
+    box-sizing: border-box;
 
     background-color: white;
-
     padding: 35px;
-
     border-radius: 15px;
 
     box-shadow: 0 8px 25px rgba(0,0,0,0.1);
 
     display: flex;
-
     flex-direction: column;
-
     gap: 15px;
 }
 
-
 .appointment-form input,
 .appointment-form select,
-.appointment-form textarea{
-
+.appointment-form textarea {
     width: 100%;
+    box-sizing: border-box;
 
     padding: 14px;
-
     border: 1px solid #ccc;
-
     border-radius: 6px;
 
     font-size: 15px;
-
     outline: none;
 }
 
-
 .appointment-form input:focus,
 .appointment-form select:focus,
-.appointment-form textarea:focus{
-
+.appointment-form textarea:focus {
     border-color: #0077b6;
 }
 
-
-.appointment-form textarea{
+.appointment-form textarea {
     height: 100px;
-
     resize: none;
 }
 
-
-.appointment-form button{
+.appointment-form button {
     width: 100%;
 }
 
+/* Mobile Responsive */
 
-/* Mobile */
+@media (max-width: 768px) {
 
-@media(max-width: 768px){
-
-    .appointment{
-        flex-direction: column;
-
+    .appointment {
+        grid-template-columns: 1fr;
         padding: 60px 25px;
+        gap: 35px;
     }
 
     .appointment-content,
-    .appointment-form{
+    .appointment-form {
         width: 100%;
     }
 
-    .appointment-content h2{
+    .appointment-content h2 {
         font-size: 32px;
     }
-
 }
 /* ================= CONTACT ================= */
 
